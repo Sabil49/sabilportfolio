@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { FiClock, FiTag } from 'react-icons/fi';
 import PagesMetaHead from '../../components/PagesMetaHead';
 import { projectsData } from '../../data/projectsData';
@@ -34,15 +35,14 @@ function ProjectSingle(props) {
 			<div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
 				{props.project.ProjectImages.map((project) => {
 					return (
-						<div className="mb-10 sm:mb-0" key={project.id}>
+						<div className="mb-10 sm:mb-0" style={{ position: 'relative', width: '100%', height: '200px' }} key={project.id}>
 							<Image
 								src={project.img}
-								className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
+								className="rounded-lg cursor-pointer shadow-lg sm:shadow-none"
 								alt={project.title}
 								key={project.id}
-								layout="responsive"
-								width={100}
-								height={90}
+								fill={true}
+								style={{ objectFit: 'contain', height: '100%', objectPosition: 'top' }}
 							/>
 						</div>
 					);
@@ -53,7 +53,7 @@ function ProjectSingle(props) {
 			<div className="block sm:flex gap-0 sm:gap-10 mt-14">
 				<div className="w-full sm:w-1/3 text-left">
 					{/* Single project client details */}
-					<div className="mb-7">
+					{/* <div className="mb-7">
 						<p className="font-general-regular text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
 							{props.project.ProjectInfo.ClientHeading}
 						</p>
@@ -83,21 +83,21 @@ function ProjectSingle(props) {
 								}
 							)}
 						</ul>
-					</div>
+					</div> */}
 
 					{/* Single project objectives */}
-					<div className="mb-7">
+					{/* <div className="mb-7">
 						<p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
 							{props.project.ProjectInfo.ObjectivesHeading}
 						</p>
 						<p className="font-general-regular text-primary-dark dark:text-ternary-light">
 							{props.project.ProjectInfo.ObjectivesDetails}
 						</p>
-					</div>
+					</div> */}
 
 					{/* Single project technologies */}
 					<div className="mb-7">
-						<p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
+						<p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-7">
 							{props.project.ProjectInfo.Technologies[0].title}
 						</p>
 						<p className="font-general-regular text-primary-dark dark:text-ternary-light">
@@ -107,12 +107,28 @@ function ProjectSingle(props) {
 						</p>
 					</div>
 
+				    {/* Single project link */}
+					<div className="mb-7">
+						<p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
+							Project Link
+						</p>
+						<p className="font-general-regular text-primary-dark dark:text-ternary-light">
+							<Link
+								href={props.project.ProjectInfo.Link}
+								target='_blank'
+								className="hover:underline hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer duration-300"
+							>
+								Click Here to Visit the Project
+							</Link>
+						</p>
+					</div>
+
 					{/* Single project social sharing */}
-					<div>
+					{/*<div>
 						<p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
 							{props.project.ProjectInfo.SocialSharingHeading}
 						</p>
-						{/* <div className="flex items-center gap-3 mt-5">
+						 <div className="flex items-center gap-3 mt-5">
 							{props.project.ProjectInfo.SocialSharing.map(
 								(social, index) => {
 									<Link
@@ -129,8 +145,8 @@ function ProjectSingle(props) {
 									</Link>;
 								}
 							)}
-						</div> */}
-					</div>
+						</div> 
+					</div>*/}
 				</div>
 
 				{/*  Single project right section details */}

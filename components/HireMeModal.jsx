@@ -4,9 +4,7 @@ import Button from './reusable/Button';
 
 const selectOptions = [
 	'Web Application',
-	'Mobile Application',
-	'UI/UX Design',
-	'Branding',
+	'Landing Page Development',
 ];
 
 function HireMeModal({ onClose, onRequest }) {
@@ -116,7 +114,7 @@ function HireMeModal({ onClose, onRequest }) {
 								</div>
 							</form>
 						</div>
-						<div className="modal-footer mt-2 sm:mt-0 py-5 px-8 border0-t text-right">
+						{/* <div className="modal-footer mt-2 sm:mt-0 py-5 px-8 border0-t text-right">
 							<span
 								onClick={onClose}
 								type="button"
@@ -129,7 +127,7 @@ function HireMeModal({ onClose, onRequest }) {
 							>
 								<Button title="Close" />
 							</span>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</main>

@@ -1,3 +1,4 @@
+'use client';
 import { useState } from 'react';
 import { clientsData } from '../../data/clientsData';
 import { clientsHeading } from '../../data/clientsData';

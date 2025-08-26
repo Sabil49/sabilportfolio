@@ -3,10 +3,6 @@ import { v4 as uuidv4 } from 'uuid';
 export const aboutMeData = [
 	{
 		id: uuidv4(),
-		bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-	},
-	{
-		id: uuidv4(),
-		bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+		bio: 'I’m a Senior Frontend Engineer with over 5 years of experience crafting high-performance, visually compelling web experiences. I specialize in building modern landing pages and frontend architectures using technologies like Next.js, React.js, TypeScript, and JavaScript. With a strong focus on design systems and responsive UI, I bring interfaces to life using Tailwind CSS and Framer Motion for fluid, interactive experiences. I deploy scalable, production-ready applications via Vercel, with performance and accessibility always top of mind. Whether it is launching pixel-perfect landing pages or architecting frontend solutions for scale, I bring a detail-driven, user-first approach to every project.',
 	},
 ];

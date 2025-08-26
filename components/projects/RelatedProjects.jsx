@@ -6,23 +6,28 @@ const RelatedProject = {
 	Projects: [
 		{
 			id: uuidv4(),
-			title: 'Mobile UI',
-			img: '/images/ui-project-2.jpg',
+			title: 'Landing Page',
+			img: '/images/land-pro-1.png',
 		},
 		{
 			id: uuidv4(),
-			title: 'Web Application',
-			img: '/images/mobile-project-1.jpg',
+			title: 'Landing Page',
+			img: '/images/land-pro-2.png',
 		},
 		{
 			id: uuidv4(),
-			title: 'UI Design',
-			img: '/images/web-project-1.jpg',
+			title: 'Landing Page',
+			img: '/images/land-pro-3.png',
 		},
 		{
 			id: uuidv4(),
-			title: 'Kabul Mobile App UI',
-			img: '/images/mobile-project-2.jpg',
+			title: 'Landing Page',
+			img: '/images/land-pro-4.png',
+		},
+		{
+			id: uuidv4(),
+			title: 'Landing Page',
+			img: '/images/land-pro-5.png',
 		},
 	],
 };
@@ -34,7 +39,7 @@ function RelatedProjects() {
 				{RelatedProject.title}
 			</p>
 
-			<div className="grid grid-cols-1 sm:grid-cols-4 gap-10">
+			<div className="grid grid-cols-1 sm:grid-cols-5 gap-5">
 				{RelatedProject.Projects.map((project) => {
 					return (
 						<Image
